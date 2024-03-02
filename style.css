@@ -1,0 +1,482 @@
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: poppins, sans-serif;
+}
+p,
+a {
+  font-family: "Avenir light", sans-serif;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.main {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  text-transform: uppercase;
+  z-index: 99;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+}
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  text-transform: capitalize;
+}
+nav h1 {
+  font-size: 25px;
+}
+nav p {
+  font-size: 17px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none;
+  color: black;
+}
+nav a {
+  font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  z-index: 99;
+  background-color: #fff;
+  display: flex;
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  justify-content: space-between;
+  padding: 40px;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
+}
+.right div h1 {
+  font-size: 14px;
+  padding: 10px;
+}
+.left {
+  font-size: 14px;
+  letter-spacing: 0.3px;
+}
+
+.footericon {
+  display: flex;
+  gap: 10px;
+}
+
+.smallicon {
+  height: 14px;
+}
+
+/*Button Commands*/
+
+.Btn,
+.Btn>a{
+  text-decoration: none;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: all 0.5s;
+}
+.Btn::before,
+.Btn>a::before {
+  width: 230px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  left: -200%;
+  top: 0;
+  transition-duration: 0.5s;
+  mix-blend-mode: difference;
+}
+.Btn:hover::before,
+.Btn>a:hover::before {
+  transition-duration: 0.5s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+.Btn:active,
+.Btn>a:active {
+  transform: translate(5px, 5px);
+  transition-duration: 0.5s;
+}
+
+.mid {
+  height: 75%;
+  width: 100%;
+  /* background-color: #e6dace; */
+  margin: 100px 0px 0px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.color {
+  position: absolute;
+  background-color: #e6dace;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+.midcontent {
+  height: 80%;
+  width: 40%;
+  min-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.midcontent > div {
+  height: 100%;
+  width: 50%;
+  /* background-color: #00000046; */
+}
+.midleft {
+  background-color: #e6dace;
+  height: 100%;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.midleft > img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  margin: 50px 50px 0px;
+}
+.midleft > h3 {
+  word-wrap: break-word;
+  font-family: poppins;
+  font-size: 27px;
+  font-weight: bold;
+}
+.midleft > hr {
+  height: 3px;
+  width: 15%;
+  border: none;
+  background-color: #0050ff;
+  border-radius: 25px;
+}
+.midleft > p {
+  font-family: "Avenir light";
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding: 5px 15px 30px;
+}
+.midleft > ul {
+  background-color: #ffffff;
+  display: flex;
+  gap: 25px;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 35% 0px;
+}
+.midlogo {
+  height: 20px;
+}
+
+.midright {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+}
+
+.midright h1 {
+  font-size: 100px;
+  font-family: poppins;
+  margin: 5px 25px 15px 0;
+}
+.midright h5 {
+  font-size: 23px;
+  font-family: "Avenir light";
+  text-transform: capitalize;
+}
+.midright p {
+  font-size: 17px;
+  font-family: "Avenir light";
+}
+
+/* Resume Page Style*/
+
+.resume-main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e6dace;
+  display: flex;
+  gap: 50px;
+  padding-bottom: 95px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-main > div > h1 {
+  font-family: poppins;
+  font-weight: bolder;
+}
+
+.resumediv {
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 725px;
+  min-height: 370px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 0.53fr 1fr;
+  gap: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.resumediv1 {
+  padding: 35px;
+  width: 100%;
+  max-width: 725px;
+  min-height: 370px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.resumediv > div {
+  padding: 35px;
+}
+.resumediv :nth-child(1) {
+  padding-right: 0px;
+}
+
+.resumediv :nth-child(2) p {
+  text-transform: capitalize;
+  margin-top: 46px;
+  font-size: 17px;
+  letter-spacing: 0.3px;
+}
+
+.resumediv > div > h6 {
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 800;
+  color: #0050ff;
+  letter-spacing: 0.2px;
+  padding: 10px 0px;
+}
+.resumediv > :nth-child(1) > p1 {
+  font-family: "Avenir";
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.resumediv > :nth-child(1) > p {
+  font-family: "Avenir";
+  font-size: 15px;
+  padding: 5px 0px;
+  font-weight: lighter;
+}
+
+.project-main {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e6dace;
+  display: flex;
+  gap: 50px;
+  padding-bottom: 95px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectdiv {
+  position: relative;
+  width: 100%;
+  max-width: 725px;
+  min-height: 370px;
+  background-color: rgb(255, 255, 255);
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project_img {
+  height: 370px;
+  /* object-fit: fill; */
+  /* aspect-ratio: 16/9; */
+  /* width: 370px; */
+  filter: saturate(120%);
+  filter: contrast(110%);
+}
+
+.projectdiv > div > div {
+  position: relative;
+  left: -30px;
+}
+
+.projectdiv > div > div > h1 {
+  padding-left: 20px;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 900;
+  color: #0050ff;
+}
+
+.projectdiv > div > div > p {
+  font-size: 14px;
+  padding-left: 20px;
+  font-family: "poppins";
+  font-weight: bold;
+}
+
+/*Contact Page*/
+.form {
+  min-height: 60vh;
+  width: 35%;
+  min-width: 250px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form {
+  padding: 60px;
+  font-family: "Avenir light";
+  font-size: 14px;
+  font-weight: bold;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+input,
+textarea {
+  outline: none;
+  min-width: 1px;
+  width: 100%;
+  color: #0050ff;
+  padding: 30px 15px 15px 15px;
+  border: 2px solid black;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  resize: none;
+  font-family: "Avenir light";
+  font-size: 14px;
+  font-weight: 900;
+}
+
+input:hover,
+textarea:hover {
+  border: 3px solid #0050ff;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid #0050ff;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+input:focus:invalid {
+  border: 3px solid red;
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+
+.firstname {
+  display: grid;
+  gap: 35px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.submit {
+  font-family: "Avenir";
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 35px;
+  border-radius: 20px;
+  background-color: #0050ff;
+  color: #fff;
+  border: solid #0050ff;
+  margin-bottom: 65px;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background-color: #fff;
+  color: black;
+}
