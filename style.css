@@ -33,6 +33,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  height: 100%;
 }
 
 nav {
@@ -120,7 +121,7 @@ footer {
 /*Button Commands*/
 
 .Btn,
-.Btn>a{
+.Btn > a {
   text-decoration: none;
   width: 130px;
   height: 40px;
@@ -139,7 +140,7 @@ footer {
   transition-duration: all 0.5s;
 }
 .Btn::before,
-.Btn>a::before {
+.Btn > a::before {
   width: 230px;
   height: 130px;
   position: absolute;
@@ -151,13 +152,13 @@ footer {
   mix-blend-mode: difference;
 }
 .Btn:hover::before,
-.Btn>a:hover::before {
+.Btn > a:hover::before {
   transition-duration: 0.5s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
 .Btn:active,
-.Btn>a:active {
+.Btn > a:active {
   transform: translate(5px, 5px);
   transition-duration: 0.5s;
 }
@@ -189,6 +190,8 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   gap: 20px;
+  max-height: 500px;
+  max-width: 660px;
 }
 .midcontent > div {
   height: 100%;
@@ -400,7 +403,7 @@ footer {
 .form {
   min-height: 60vh;
   width: 35%;
-  min-width: 250px;
+  min-width: 425px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -479,4 +482,11 @@ input:focus:invalid {
 .submit:hover {
   background-color: #fff;
   color: black;
+}
+
+.mainscreenbutton {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 15px 20px;
 }

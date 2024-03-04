@@ -55,3 +55,8 @@ class MyFooter extends HTMLElement {
 }
 
 customElements.define("my-footer", MyFooter);
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector(".main"),
+  smooth: true,
+});
