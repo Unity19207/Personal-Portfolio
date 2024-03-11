@@ -506,6 +506,7 @@ input:focus:invalid {
 }
 
 @media only screen and (max-device-width: 640px) {
+
   #home,
   .main,
   .mid,
@@ -620,9 +621,7 @@ input:focus:invalid {
   .midlogo {
     height: 25px;
   }
-  
-  }
-  .midleft ul {
+    .midleft ul {
     position: fixed;
     bottom: 0;
     display: flex;
