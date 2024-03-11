@@ -10,7 +10,7 @@ class MyNavbar extends HTMLElement {
 
         </div>
         <ul>
-            <li><a href="./index.html">About Me</a></li>
+            <li><a href="./index.html">About</a></li>
             <li><a href="./resume.html">Resume</a></li>
             <li><a href="./projects.html">Projects</a></li>
             <li><a href="./contact.html">Contact</a></li>
